@@ -1,8 +1,7 @@
-package lab02;
 
 import java.util.Arrays;
 
-public class lab2 {
+public class Lab02 {
     public static void main(String[] args) {
         double[][] A = {
                 {10, 2, -1},
@@ -38,7 +37,8 @@ public class lab2 {
                 }
                 newX[i] = sum / A[i][i];
             }
-
+            
+             System.out.println("Итерация " + (iter + 1) + ": " + Arrays.toString(newX));
             // Проверка на сходимость
             if (hasConverged(X, newX, tolerance)) {
                 System.out.println("Решение найдено за " + (iter + 1) + " итераций: " + Arrays.toString(newX));
@@ -67,7 +67,7 @@ public class lab2 {
 
                 X[i] = sum / A[i][i]; // Вычисляем новое значение X[i]
             }
-
+            System.out.println("Итерация " + (iter + 1) + ": " + Arrays.toString(X));
             // Проверка на сходимость
             if (hasConverged(oldX, X, tolerance)) {
                 System.out.println("Решение найдено за " + (iter + 1) + " итераций: " + Arrays.toString(X));
