@@ -4,12 +4,13 @@ import java.util.Arrays;
 public class Lab02 {
     public static void main(String[] args) {
         double[][] A = {
-                {10, 2, -1},
-                {-3, -10, 2},
-                {5, 0, 1}
+                {5.452, 0.401, 0.758, 0.123},
+                {0.785, 2.654, 0.687, 0.203},
+                {0.402, 0.244, 4.456, 0.552},
+                {0.210, 0.514, 0.206, 4.568}
         };
-        double[] B = {6, -6, 10};
-        double[] X = {0, 0, 0}; // Начальное приближение
+        double[] B = {0.886, 0.356, 0.342, 0.452};
+        double[] X = {0, 0, 0, 0}; // Начальное приближение
 
         int maxIterations = 100;
         double tolerance = 1e-6;
